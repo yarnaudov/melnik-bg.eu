@@ -7,7 +7,7 @@
     <div class="article_content" >
 	
 		<?php if(isset($article['params']['images'][0]) && is_array($article['params']['images'][0])){ ?>
-		<img src="<?=$this->Image->getImageUrl($article['params']['images'][0]['id'], 150, 110);?>" class="first_image" >
+		<img src="<?=$this->Image->getImageUrl($article['params']['images'][0]['id'], 147, 110);?>" class="first_image" >
 		<?php }elseif(isset($article['params']['images'][0])){ ?>
 		<img src="<?=base_url($article['params']['images'][0]);?>" >
 		<?php } ?>
@@ -23,7 +23,7 @@
 			
 				if(is_array($image)){
 					echo "<a href=\"".$this->Image->getImageUrl($image['id'])."\" title=\"".$image['title']."\" rel=\"lightbox[profile]\" >
-							<img src=\"".$this->Image->getImageUrl($image['id'], 150, 110)."\" >
+							<img src=\"".$this->Image->getImageUrl($image['id'], 147, 110)."\" >
 						  </a>\n";
 				}
 				else{
