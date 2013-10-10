@@ -7,18 +7,16 @@
     <div class="sights_full" >
 	
 		<?php if(isset($article['params']['images'][0]) && is_array($article['params']['images'][0])){ ?>
-		<img src="<?=$this->Image->getImageUrl($article['params']['images'][0]['id'], 150, 110);?>" class="first_image" >
+		<img src="<?=$this->Image->getImageUrl($article['params']['images'][0]['id'], 150, 110);?>" >
 		<?php }elseif(isset($article['params']['images'][0])){ ?>
 		<img src="<?=base_url($article['params']['images'][0]);?>" >
 		<?php } ?>
 	
         <?=$article['text'];?>
 		
-		
 		<?php 
 		
-		if(isset($article['params']['images'])){	
-			echo "<div class=\"sights_images\" >\n";
+		if(isset($article['params']['images'])){		
 			foreach($article['params']['images'] as $image){
 			
 				if(is_array($image)){
@@ -29,11 +27,9 @@
 				}				
 			
 			}		
-			echo "</div>\n";
 		}
 		
 		?>
-		
 		
     </div>
    

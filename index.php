@@ -1,12 +1,12 @@
 <?php
 	define('TEMPLATE_DIR', TEMPLATES_DIR.'/'.$this->Setting->getTemplate('main').'/');
-    define('IMAGES_DIR', TEMPLATE_DIR.'images/');
-	define('VIEWS_DIR', '../../'.TEMPLATE_DIR.'views/');
+  define('IMAGES_DIR', TEMPLATE_DIR.'images/');
+  define('VIEWS_DIR', '../../'.TEMPLATE_DIR.'views/');
 	
-	$this->Content->templates['main'] = 'views/content/main';
-	$this->Content->templates['article'] = 'views/content/article';
-	$this->Content->templates['articles_list'] = 'views/content/articles_list';
-	$this->Content->templates['gallery'] = array('image' => 'views/content/gallery/image', 'images' => 'views/content/gallery/images');
+	$this->Content->templates['main'] = VIEWS_DIR.'content/main';
+	$this->Content->templates['article'] = VIEWS_DIR.'content/article';
+	$this->Content->templates['articles_list'] = VIEWS_DIR.'content/articles_list';
+	$this->Content->templates['gallery'] = array('image' => VIEWS_DIR.'content/gallery/image', 'images' => VIEWS_DIR.'content/gallery/images');
 	
 	$this->Module->templates['mod_language_switch'] = 'views/modules/language-switch';
 	$this->Module->templates['mod_breadcrumb'] = 'views/modules/navigation';
@@ -77,6 +77,7 @@
 				</div>
 					
 				<div class="main_content_right">
+					<include type="banner" name="right-content" />
 					<include type="module" name="right-content" />
 				</div>
 				
