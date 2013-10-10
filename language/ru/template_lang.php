@@ -1,3 +1,3 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$lang[] = '';
+$lang['label_contact_form'] = 'Контактная форма';

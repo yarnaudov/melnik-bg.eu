@@ -7,6 +7,7 @@
 	$this->Content->templates['article'] = VIEWS_DIR.'content/article';
 	$this->Content->templates['articles_list'] = VIEWS_DIR.'content/articles_list';
 	$this->Content->templates['gallery'] = array('image' => VIEWS_DIR.'content/gallery/image', 'images' => VIEWS_DIR.'content/gallery/images');
+	$this->Content->templates['contact_forms'] = array('contact_form' => VIEWS_DIR.'content/contact_forms/contact_form');
 	
 	$this->Module->templates['mod_language_switch'] = 'views/modules/language-switch';
 	$this->Module->templates['mod_breadcrumb'] = 'views/modules/navigation';
