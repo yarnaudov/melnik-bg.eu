@@ -1,7 +1,7 @@
 <?php
 	define('TEMPLATE_DIR', TEMPLATES_DIR.'/'.$this->Setting->getTemplate('main').'/');
-  define('IMAGES_DIR', TEMPLATE_DIR.'images/');
-  define('VIEWS_DIR', '../../'.TEMPLATE_DIR.'views/');
+	define('IMAGES_DIR', TEMPLATE_DIR.'images/');
+	define('VIEWS_DIR', '../../'.TEMPLATE_DIR.'views/');
 	
 	$this->Content->templates['main'] = VIEWS_DIR.'content/main';
 	$this->Content->templates['article'] = VIEWS_DIR.'content/article';
@@ -9,10 +9,11 @@
 	$this->Content->templates['gallery'] = array('image' => VIEWS_DIR.'content/gallery/image', 'images' => VIEWS_DIR.'content/gallery/images');
 	$this->Content->templates['contact_forms'] = array('contact_form' => VIEWS_DIR.'content/contact_forms/contact_form');
 	
-	$this->Module->templates['mod_language_switch'] = 'views/modules/language-switch';
-	$this->Module->templates['mod_breadcrumb'] = 'views/modules/navigation';
-	$this->Module->templates['top-menu'] = array('mod_menu' => 'views/modules/top-menu');
-	$this->Module->templates['main-menu'] = array('mod_menu' => 'views/modules/main-menu');
+	$this->Module->templates['mod_language_switch'] = VIEWS_DIR.'modules/language-switch';
+	$this->Module->templates['mod_advanced_html'] = VIEWS_DIR.'modules/properties';
+	$this->Module->templates['mod_breadcrumb'] = VIEWS_DIR.'modules/navigation';
+	$this->Module->templates['top-menu'] = array('mod_menu' => VIEWS_DIR.'modules/top-menu');
+	$this->Module->templates['main-menu'] = array('mod_menu' => VIEWS_DIR.'modules/main-menu');
 ?>
 <!DOCTYPE html>
 <html>

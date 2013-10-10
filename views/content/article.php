@@ -4,7 +4,7 @@
     <h4 class="sights_header" ><?=$article['title'];?></h4>
     <?php } ?>
     
-    <div class="sights_full" >
+    <div class="article_content" >
 	
 		<?php if(isset($article['params']['images'][0]) && is_array($article['params']['images'][0])){ ?>
 		<img src="<?=$this->Image->getImageUrl($article['params']['images'][0]['id'], 150, 110);?>" class="first_image" >
