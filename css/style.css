@@ -370,21 +370,23 @@ a:hover {
     margin: 0px 15px 5px;
     text-align: left;
 }
-.sights_full img {
+
+.article_content .first_image,
+.article_content .sights_images img {
     border: 1px solid #888888;
     cursor: pointer;
    
     padding: 1px;
     text-align: center;
 }
-.sights_full .first_image{
+.article_content .first_image{
 	 margin: 4px 10px 5px;
 	 float: left;
 }
-.sights_full .sights_images{
+.article_content .sights_images{
 	margin-right: -3px;
 }
-.sights_full .sights_images img{
+.article_content .sights_images img{
 	margin-right: 3px;
 }
 

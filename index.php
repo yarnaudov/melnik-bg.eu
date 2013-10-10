@@ -98,6 +98,9 @@
 
 		<include type="js" />
 		
+		<script src="<?php echo base_url(TEMPLATE_DIR.'/lightbox/js/lightbox.js');?>"></script>
+		<link href="<?php echo base_url(TEMPLATE_DIR.'/lightbox/css/lightbox.css');?>" rel="stylesheet" />
+		
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];

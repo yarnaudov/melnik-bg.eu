@@ -22,7 +22,9 @@
 			foreach($article['params']['images'] as $image){
 			
 				if(is_array($image)){
-					echo "<img src=\"".$this->Image->getImageUrl($image['id'], 150, 110)."\" >\n";
+					echo "<a href=\"".$this->Image->getImageUrl($image['id'])."\" title=\"".$image['title']."\" rel=\"lightbox[profile]\" >
+							<img src=\"".$this->Image->getImageUrl($image['id'], 150, 110)."\" >
+						  </a>\n";
 				}
 				else{
 				
@@ -33,8 +35,7 @@
 		}
 		
 		?>
-		
-		
+				
     </div>
    
     <?php if(isset($article['params']['show_comments']) && $article['params']['show_comments'] == 'yes'){
