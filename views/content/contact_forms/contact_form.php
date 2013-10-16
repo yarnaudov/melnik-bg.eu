@@ -4,7 +4,7 @@
 
           <?php echo $contact_form_msg;?>
           &nbsp;
-          <a href="<?php echo  current_url();?>" ><?php echo lang('label_cf_back_to_form');?></a>
+          <a href="<?php echo current_url();?>" ><?php echo lang('label_cf_back_to_form');?></a>
 
 <?php }else{ 
         $captcha = $contact_form['fields']['captcha'];
@@ -16,7 +16,7 @@
 	</div>
 	<?php } ?>
 	  
-	<form method="post" action="<?php echo site_url('contact_forms/' . $contact_form['id']);?>" class="contactForm" id="contactForm_<?php echo $contact_form['id'];?>" >
+	<form method="post" action="<?php echo  current_url().'?contact_form_id='.$contact_form['id'];?>" class="contactForm" id="contactForm_<?php echo $contact_form['id'];?>" >
 
 		<span style="margin-top: -25px;display: block;font-size: 18px;"><?php echo lang('label_contact_form'); ?></span>
 		<br/>
