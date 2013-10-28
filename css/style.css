@@ -325,6 +325,9 @@ a:hover {
     margin: 16px;
     text-align: left;
 }
+.sights_header_no_margin{
+	margin: 16px 0;
+}
 .sight {
     border-bottom: 1px dashed #AAAAAA;
     color: #693E34;
