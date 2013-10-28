@@ -548,6 +548,12 @@ a:hover {
 .contactForm label{
 	display: block;
 }
+.comments_form label.error,
+.contactForm label.error{
+	display: inline-block;
+	color: red;
+	padding-left: 4px;
+}
 .comments_form  textarea,
 .contactForm textarea{
 	width: 100%;
