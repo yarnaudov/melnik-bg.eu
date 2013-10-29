@@ -148,7 +148,7 @@ body {
     float: left;
     margin: 0;
     padding: 0 2px;
-    width: 650px;
+    width: 654px;
 }
 #general_menu {
     border: 0 solid #FF0000;
@@ -325,15 +325,19 @@ a:hover {
     margin: 16px;
     text-align: left;
 }
-.sights_header_no_margin{
-	margin: 16px 0;
-}
 .sight {
     border-bottom: 1px dashed #AAAAAA;
     color: #693E34;
     font-size: 13px;
     height: 120px;
     margin: 5px 0;
+}
+.sight:last-child,
+.sights_conteiner .sight:last-child{
+	border-bottom: none !important;
+}
+.sights_conteiner .sights_header{
+	margin: 16px 0;
 }
 .sight_img {
     border: 1px solid #888888;
