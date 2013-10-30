@@ -1,7 +1,7 @@
     
     <div class="comments" >
 	
-		<span style="margin-top: -25px;display: block;font-size: 18px;" >Коментари</span>
+		<span style="margin-top: -25px;display: block;font-size: 18px;" ><?php echo lang('label_comments'); ?></span>
 	
 		<div class="comments_list" >
 			

@@ -1,4 +1,4 @@
-<div class="article" >
+<div class="article sights_conteiner" >
     
     <?php if($article['show_title'] == 'yes'){ ?>
     <h4 class="sights_header" ><?=$article['title'];?></h4>

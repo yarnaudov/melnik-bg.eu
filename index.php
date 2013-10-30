@@ -14,6 +14,7 @@
 	$this->Module->templates['mod_breadcrumb'] = VIEWS_DIR.'modules/navigation';
 	$this->Module->templates['top-menu'] = array('mod_menu' => VIEWS_DIR.'modules/top-menu');
 	$this->Module->templates['main-menu'] = array('mod_menu' => VIEWS_DIR.'modules/main-menu');
+	$this->Module->templates['right-content'] = array('main' => VIEWS_DIR.'modules/right-content-main');
 ?>
 <!DOCTYPE html>
 <html>
@@ -88,9 +89,7 @@
 			<div class="footer_back">
 
 				<div id="copyright">
-					<span class="copyright_text" >
-						Designed by <u><a href=\"contacts.php\">Yordan Arnaudov</a></u> - member of <u><a href=\"http://webrise.biz\" target=\"blank\">webrise</a></u> team<br/>&copy; 2010 Webrise
-					</span>
+					<span class="copyright_text" >&copy; 2010 - <?php echo date('Y'); ?> Yordan Arnaudov</span>
 				</div>
 			</div>
 
@@ -98,6 +97,10 @@
 
 		<include type="js" />
 		
+		<script>
+			var labelImage = "<?php echo lang('label_image'); ?>";
+      var labelOf = "<?php echo lang('label_of'); ?>";
+		</script>
 		<script src="<?php echo base_url(TEMPLATE_DIR.'/lightbox/js/lightbox.js');?>"></script>
 		<link href="<?php echo base_url(TEMPLATE_DIR.'/lightbox/css/lightbox.css');?>" rel="stylesheet" />
 		

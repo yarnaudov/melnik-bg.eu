@@ -48,12 +48,12 @@ lightbox = new Lightbox options
   LightboxOptions = (function() {
 
     function LightboxOptions() {
-      this.fileLoadingImage = base_url+'templates/dynamic/lightbox/images/loading.gif';
-      this.fileCloseImage = base_url+'templates/dynamic/lightbox/images/close.png';
+      this.fileLoadingImage = base_url+'templates/melnik/lightbox/images/loading.gif';
+      this.fileCloseImage = base_url+'templates/melnik/lightbox/images/close.png';
       this.resizeDuration = 700;
       this.fadeDuration = 500;
-      this.labelImage = "Снимка";
-      this.labelOf = "от";
+      this.labelImage = labelImage;
+      this.labelOf = labelOf;
     }
 
     return LightboxOptions;
