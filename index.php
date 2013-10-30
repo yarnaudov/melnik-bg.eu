@@ -16,7 +16,7 @@
 	$this->Module->templates['main-menu'] = array('mod_menu' => VIEWS_DIR.'modules/main-menu');
 	$this->Module->templates['right-content'] = array('main' => VIEWS_DIR.'modules/right-content-main');
 	
-	$this->Module->templates['right-content'] = array('main' => VIEWS_DIR.'banners/right-content-main');
+	$this->Banner->templates['right-content'] = array('main' => VIEWS_DIR.'banners/right-content-main');
 	
 ?>
 <!DOCTYPE html>
