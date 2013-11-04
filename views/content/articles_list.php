@@ -18,7 +18,7 @@ foreach($articles as $article){
 		<div class="item" >
 		
 			<div class="item-image" >
-				<a href="<?=$this->menu_link.'/article:'.$article['alias'];?>" >
+				<a href="<?=$this->menu_link.'/article/'.$article['alias'];?>" >
 					<?php if(isset($article['params']['images'][0]) && is_array($article['params']['images'][0])){ ?>
 					<img src="<?=$this->Image->getImageUrl($article['params']['images'][0]['id'], 150, 150);?>" >
 					<?php }elseif(isset($article['params']['images'][0])){ ?>
@@ -31,7 +31,7 @@ foreach($articles as $article){
 			
 			<div class="item-content" >
 				<div class="item-title">
-					<a href="<?=$this->menu_link.'/article:'.$article['alias'];?>" ><?=$article['title'];?></a>
+					<a href="<?=$this->menu_link.'/article/'.$article['alias'];?>" ><?=$article['title'];?></a>
 				</div>
 				<div class="item-text">
 					<?=mb_strlen($article['text']) > 300 ? mb_substr($article['text'], 0, 300).' ...' : $article['text'];?>

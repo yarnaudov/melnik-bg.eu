@@ -1,6 +1,10 @@
 <div class="like-buttons" >
 	<div class="pull-left" >
-		<a href="" title="Предложете промяна на статията" >е</a>
+		<a href="" class="send-change-request" title="Предложете промяна на статията" >е</a>
+		<div id="send-change-request-dialog" title="Предложете промяна на статията" >
+			<h3><?php echo $article['title']; ?></h3>
+			<?php echo $this->Module->load('send-change-request'); ?>
+		</div>
 	</div>
 	<div class="pull-right" >
 		<!--
@@ -14,7 +18,7 @@
 			    return false;">
 			  Share on Facebook
 			</a>
-		</span>
+		</span>		
 		-->
 		<span class="google_plus" >
 			<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

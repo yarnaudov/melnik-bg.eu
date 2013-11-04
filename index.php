@@ -4,6 +4,8 @@
 	define('IMAGES_DIR', TEMPLATE_DIR.'images/');
 	define('VIEWS_DIR', '../../'.TEMPLATE_DIR.'views/');
 	
+	$this->Module->templates['mod_language_switch'] = VIEWS_DIR.'modules/language-switch';
+	
 	$this->Module->templates['right-content1'] = array('main' => VIEWS_DIR.'modules/right-content-main');
 	$this->Module->templates['right-content2'] = array('main' => VIEWS_DIR.'modules/right-content-main');	
 	$this->Banner->templates['right-content1'] = array('main' => VIEWS_DIR.'banners/right-content-main');
@@ -19,6 +21,7 @@
 		<link rel="stylesheet" href="<?php echo base_url(TEMPLATE_DIR.'css/global.css'); ?>" type="text/css" media="all" />
 		<link rel="stylesheet" href="<?php echo base_url(TEMPLATE_DIR.'css/style.css'); ?>" type="text/css" media="all" />
 		<link href="<?php echo base_url(TEMPLATE_DIR.'/lightbox/css/lightbox.css');?>" rel="stylesheet" />
+		<link href="<?php echo base_url(TEMPLATE_DIR.'/css/jquery-ui.css');?>" rel="stylesheet" />
 	</head>
 		
 	<body>
@@ -79,9 +82,10 @@
 		<script src="<?php echo base_url(TEMPLATE_DIR.'js/scripts.js');?>"></script>
 		<script>
 			var labelImage = "<?php echo lang('label_image'); ?>";
-      var labelOf = "<?php echo lang('label_of'); ?>";
+			var labelOf = "<?php echo lang('label_of'); ?>";
 		</script>
-		<script src="<?php echo base_url(TEMPLATE_DIR.'/lightbox/js/lightbox-2.6.min.js');?>"></script>		
+		<script src="<?php echo base_url(TEMPLATE_DIR.'/lightbox/js/lightbox-2.6.min.js');?>"></script>
+		<script src="<?php echo base_url(TEMPLATE_DIR.'/js/tinymce/tinymce.min.js');?>"></script>
 		
 	</body>
 </html>

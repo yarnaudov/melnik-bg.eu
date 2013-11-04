@@ -1,0 +1,30 @@
+.ui-dialog {
+	border: 1px solid #EADAAE !important;
+	display: none;
+}
+.ui-dialog  .ui-dialog-titlebar{
+	border-radius: 0 !important;
+	background: url('../images/general_menu_normal.jpg') left bottom repeat-x #F2EAD3 !important;
+	border: 0 !important;
+	margin: -0.2em -0.2em 0.2em -0.2em !important;
+}
+.ui-dialog-title{
+	color: #693E34 !important;
+}
+.ui-dialog .ui-dialog-content{
+	padding: 20px;
+	color: #693E34 !important;
+ }
+ 
+.ui-widget button{
+	font: bold 11px 'Helvetica Neue',Helvetica,Arial,'lucida grande',tahoma,verdana,arial,sans-serif !important;
+}
+.ui-widget input, 
+.ui-widget select, 
+.ui-widget textarea{
+	font: 13px Georgia !important;
+}
+.ui-widget label{
+	font: 13px Georgia !important;
+	color: #693E34 !important;
+}

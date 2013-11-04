@@ -65,44 +65,19 @@ textarea{
 
 /* ------------------ start language switch ---------------------- */
 .language-switch .module_mod_language_switch{
-	position: absolute;
-	top: 0px;
+	float: left;
 }
 .language-switch ul{
-	float: left;
 	list-style: none;
-	background-color: #ffffff;
-	padding: 1px 4px;
-	margin-top: 1px;
-	width: 100px;
-	background-image: url('../images/iconArrow.png');
-	background-position: right 2px;
-	background-repeat: no-repeat;
-	border: 1px solid #aaa;
+	margin: 4px 0 0 4px;;
+	overflow: auto;
 }
 .language-switch ul li{
-	display: none;
-	overflow: auto;
-	padding: 1px;
-}
-.language-switch ul li.current {
 	display: block;
-}
-.language-switch ul li a{
-	font-size: 11px;
-	color: #693E34;
-}
-.language-switch ul li img,
-.language-switch ul li span{
 	float: left;
+	margin-right: 5px;
 }
-.language-switch ul li span{
-	padding: 2px 0 0 4px;
-}
-.language-switch ul:hover{
-	border: 1px solid #aaa;
-}
-.language-switch ul:hover li{
+.language-switch ul li img{
 	display: block;
 }
 /* ------------------ end language switch ------------------------ */
@@ -275,7 +250,7 @@ textarea{
 	margin: 20px 0;
 	padding: 5px 10px;	
 	text-align: right;
-	height: 20px;
+	overflow: auto;
 	background-color: #FBF7EB;
 }
 #content .like-buttons .facebook,
@@ -300,7 +275,7 @@ textarea{
 	margin: 0;
 }
 #content .comments_list ul li{
-	padding: 10px;
+	padding: 5px 10px;
 	overflow: auto;
 }
 #content .comments_list ul li:nth-child(odd){
@@ -323,20 +298,26 @@ textarea{
 #content .comments_form{
 	width: 100%;
 }
-#content .comments_form div{
+#content .comments_form .row,
+.contactForm .row{
 	margin: 5px 0;
 }
-#content .comments_form div label{
+#content .comments_form .row label,
+.contactForm .row label{
 	display: block;
 	margin-bottom: 2px;
 }
-#content .comments_form div input{
+#content .comments_form .row input,
+.contactForm .row input{
 	width: 50%;
+	padding: 2px 0;
 }
-#content .comments_form .captcha_input{
+#content .comments_form  .row .captcha_input,
+.contactForm .row .captcha_input{
 	width: 200px;
 }
-#content .comments_form div textarea{
+#content .comments_form .row textarea,
+.contactForm  .row textarea{
 	width: 100%;	
 }
 /* ------------------ end content -------------------------------- */
