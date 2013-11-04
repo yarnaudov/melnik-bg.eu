@@ -17,7 +17,7 @@
 		<include type="header" />		
 		<link rel="shortcut icon" type="image/ico" href="<?php echo base_url(IMAGES_DIR.'icon.png'); ?>" />
 		<link rel="stylesheet" href="<?php echo base_url(TEMPLATE_DIR.'css/global.css'); ?>" type="text/css" media="all" />
-		<link rel="stylesheet" href="<?php echo base_url(TEMPLATE_DIR.'css/style-new.css'); ?>" type="text/css" media="all" />
+		<link rel="stylesheet" href="<?php echo base_url(TEMPLATE_DIR.'css/style.css'); ?>" type="text/css" media="all" />
 		<link href="<?php echo base_url(TEMPLATE_DIR.'/lightbox/css/lightbox.css');?>" rel="stylesheet" />
 	</head>
 		
