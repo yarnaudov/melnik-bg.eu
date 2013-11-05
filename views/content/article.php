@@ -66,6 +66,7 @@
    
 	<?php if(isset($article['params']['show_comments']) && $article['params']['show_comments'] == 'yes'){ ?>
 			<h3><?php echo lang('label_comments'); ?></h3>
+			<!--
 			<div class="fb-comments" data-href="<?php echo current_url(); ?>" data-numposts="5"></div>
 			<script>(function(d, s, id) {
 			  var js, fjs = d.getElementsByTagName(s)[0];
@@ -74,6 +75,7 @@
 			  js.src = "//connect.facebook.net/bg_BG/all.js#xfbml=1&appId=151974345013596";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
+			-->
 		<?php $this->load->view('content/article_comments'); ?>
 		  
 	<?php } ?>
