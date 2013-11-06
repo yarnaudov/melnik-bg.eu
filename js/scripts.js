@@ -5,6 +5,11 @@ $(function(){
 		modal: true,
 		width: 800,
 		position: ['auto', 20],
+		beforeClose: function( event, ui ) {
+			$('#send-change-request-dialog .content-form').show();
+			$('#send-change-request-dialog .content-msg').hide();
+			$('#send-change-request-dialog .captcha_input').attr('value', '');
+		},
 	});
 
 	if($('.send-change-request').length > 0){
@@ -32,6 +37,12 @@ $(function(){
 		e.preventDefault();
 		$('#send-change-request-dialog').dialog('open');
 		
+	});
+	
+	$('#send-change-request-dialog form').attr('target', 'send-change-request-iframe');
+	$('#send-change-request-iframe').on('load', function(){
+		$('#send-change-request-dialog .content-form').hide();
+		$('#send-change-request-dialog .content-msg').html($(this).contents().find('#send-change-request-dialog .module .content').html()).show();
 	});
 	
 });

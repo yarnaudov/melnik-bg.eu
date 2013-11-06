@@ -1,9 +1,10 @@
 <div class="like-buttons" >
 	<div class="pull-left" >
-		<a href="" class="send-change-request" title="Предложете промяна на статията" >е</a>
+		<a href="" class="send-change-request" title="Предложете промяна на статията" >Предложете промяна</a>
 		<div id="send-change-request-dialog" title="Предложете промяна на статията" style="display: none;" >
-			<h3><?php echo $article['title']; ?></h3>
-			<?php echo $this->Module->load('send-change-request'); ?>
+			<div class="content-msg" ></div>
+			<div class="content-form" ><?php echo $this->Module->load('send-change-request'); ?></div>
+			<iframe id="send-change-request-iframe" name="send-change-request-iframe" src="#" style="display: none;" ></iframe>
 		</div>
 	</div>
 	<div class="pull-right" >
