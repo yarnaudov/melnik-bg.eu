@@ -10,11 +10,11 @@
 		-->
 	</div>
 	<div class="pull-right" >		
-		<span class="google_plus" >
+		<span class="like-button google_plus" >
 			<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 			<g:plusone size="medium"></g:plusone>
 		</span>
-		<span class="facebook" >
+		<span class="like-button facebook" >
 			<div id="fb-root"></div>
 			<script>(function(d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0];
@@ -26,13 +26,13 @@
 			<div class="fb-like" data-layout="button_count" data-show-faces="true" data-send="false"></div>
 		</span>
 		<?php if('bg' == get_lang()){ ?>
-		<span class="svejo" >
+		<span class="like-button svejo" >
 			<script type="text/javascript" src="http://svejo.net/button.js"></script>
 			<div class="svejo-button" data-href="<?php echo current_url(); ?>" data-size="compact"></div>
 		</span>
 		<?php } ?>
 		<?php if('ru' == get_lang()){ ?>
-		<span class="vk" >
+		<span class="like-button vk" >
 			<!-- Put this script tag to the <head> of your page -->
 			<script type="text/javascript" src="//vk.com/js/api/openapi.js?101"></script>
 

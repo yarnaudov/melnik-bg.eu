@@ -259,9 +259,7 @@ textarea{
 	display: inline-block;
 	margin-top: 2px;
 }
-#content .like-buttons .facebook,
-#content .like-buttons .google_plus,
-#content .like-buttons .facebook-share{
+#content .like-buttons .like-button{
 	display: inline-block;
 }
 #content .like-buttons .facebook-share{
